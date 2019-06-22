@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>CFR-Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f16f26;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f16f26;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f16f26;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f16f26;
+  }
+  .carousel-indicators li {
+      border-color: #f16f26;
+  }
+  .carousel-indicators li.active {
+      background-color: #f16f26;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f16f26; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f16f26;
+      background-color: #fff !important;
+      color: #f16f26;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f16f26 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f16f26;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f16f26;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f16f26 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f16f26;
+  }
+
+/* divider section */
+.divider {
+  color: #fff;
+  text-align: center;
+}
+.divider .fa {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  line-height: 76px;
+  text-transform: capitalize;
+}
+.divider h2 {
+  padding-bottom: 4px;
+}
+.divider .divider-wrapper {
+  padding: 40px 20px 40px 20px;
+  position: relative;
+  bottom: 40px;
+  transition: all 0.4s ease-in;
+}
+.divider .divider-wrapper:hover {
+  bottom: 60px;
+  cursor: pointer;
+}
+.divider .divider-one {
+  background: #f16f26;
+}
+.divider .divider-two {
+  background: #f16f26;
+}
+.divider .divider-three {
+  background: #f16f26;
+}
+#team {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+#team h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#team h3 {
+  padding-bottom: 10px;
+}
+#team .team-wrapper {
+  border: 2px solid #f16f26;
+  padding: 20px;
+  margin: 10px;
+}
+#team h4 {
+  color: #f16f26;
+}
+#team img {
+  opacity: 0.8;
+}
+#team hr {
+  border-color: #303030;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#team strong {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+#team .progress {
+  border-radius: 0px;
+  height: 4px;
+}
+
+
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand navbar-left" style="padding: 0px" href="#myPage"><img src="./logowhite.png" class="img-responsive" style="max-height: 50px; padding-left: 4px" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./team.html">TEAM</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
+        <li><a href="./partner.html">PARTNERS</a></li>
+        <li><a href="./support.html">SUPPORT US</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="team" class="container-fluid">        
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-8 col-sm-12">
+                            <h2 style="padding-bottom: 0px;margin-bottom: 5px">The Team Throughout The Years</h2>
+                            <p style="text-align: center;">"Coming together is a beginning, staying together is progress, and working together is success." – Henry Ford</p>
+                        </div>
+                     </div>
+                     <hr style="margin: 10px;"><hr style="margin: 10px;" >
+                     <div class="row">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2 style="padding-bottom: 0px;margin-bottom: 5px">2016-17</h2>
+                                <center><p>Participated in Supra SAE Delhi. <br> Secured 47th rank all over India</p>
+                            </center>
+                                <p style="text-align: center;"></p>
+                            </div>
+                         </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/1.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/2.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/3.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/4.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/5.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/6.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/7.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2016-17/8.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div><br>
+                    <hr style="margin: 10px;"><hr style="margin: 10px;" >
+                    <div class="row">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2 style="padding-bottom: 0px;margin-bottom: 5px">2017-18</h2>
+                                <center><p>Participated in Formula Bharat, Comibatore <br> Secured 27th rank all over India</p>
+                            </center>
+                                <p style="text-align: center;"></p>
+                            </div>
+                         </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/1.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/2.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/3.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/4.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/5.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/6.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/7.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2017-18/8.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div><br>
+                    <hr style="margin: 10px;"><hr style="margin: 10px;" >
+                    <div class="row">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <h2 style="padding-bottom: 0px;margin-bottom: 5px">2018-19</h2>
+                                <center><p>Participated in Formula Bharat, Comibatore <br> Secured 24th rank all over India</p>
+                            </center>
+                                <p style="text-align: center;"></p>
+                            </div>
+                         </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/1.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/2.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/3.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/4.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/5.jpg" class="img-responsive" alt="team img" style="height">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/6.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/7.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-wrapper">
+                                <img src="./2018-19/8.jpg" class="img-responsive" alt="team img">
+                            </div>
+                        </div>
+                    </div><br>
+                     <!-- <div class="row mt30"> 
+                        <div class="col-md-12 col-sm-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Onetel Design Studio</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <strong>HTML5 &AMP; CSS3</strong>
+                            <span class="pull-right">100%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                            <strong>BOOTSTRAP</strong>
+                            <span class="pull-right">80%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                </div>
+                            <strong>UX Design</strong>
+                            <span class="pull-right">70%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>		
+
+
+<!-- Container (Contact Section) -->
+<!-- <div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<hr><hr>
+<footer>
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-4 col-sm-4">
+                    <p><br>Be a part of our family and help us reach our goals by
+                    <a href="./support.html">Donating and Supporting us.</a><br>
+                    Please Contact our team for Sponsorship Details or check out our <a href=""> Brochure</a>. <br>
+                    If you wish to set up Seminars or Talks and wanna partner with us, please get in <a href="./contact.html">contact with us</a></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-4">
+               <center><img src="./logo.png" class="img-responsive" style="max-width: 250px" alt="logo">
+                <p style="margin-bottom: 5px; margin-top: 10px"> FR.CRCE Bandra</p>
+                    <p style="margin-bottom: 5px;"> crceformularacing@gmail.com</p>
+                    <a href="https://www.facebook.com/CRCEFormulaRacing/" class="fa fa-facebook fa-2x" style="color: #f16f26"></a>    &nbsp;&nbsp;
+                    <a href="https://www.instagram.com/teamcfr/?hl=en" class="fa fa-instagram fa-2x" style="color: #f16f26"></a>
+                  </center> 
+                </div>
+                
+                <div class="col-md-4 col-sm-4 newsletter">
+                    <h3>Contact Us</h3>
+                    <p><a href="./contact.html">"We are always Happy to help you help us out!"</a></p>
+                    <h3>Support Us</h3>
+                    <p><a href="./support.html">“There is no exercise better for the heart than reaching down and lifting people up.” </a></p>
+                </div>
+                
+            </div>
+        </div>
+    </footer> 
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Team CFR sponsored by <a href="https://www.bankofbaroda.com/" title="Visit BOB">Bank of Baroda</a></p>
+    </footer>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

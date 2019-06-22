@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>CFR-Support Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f16f26;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f16f26;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f16f26;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f16f26;
+  }
+  .carousel-indicators li {
+      border-color: #f16f26;
+  }
+  .carousel-indicators li.active {
+      background-color: #f16f26;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f16f26; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f16f26;
+      background-color: #fff !important;
+      color: #f16f26;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f16f26 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f16f26;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f16f26;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f16f26 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f16f26;
+  }
+
+/* divider section */
+.divider {
+  color: #fff;
+  text-align: center;
+}
+.divider .fa {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  line-height: 76px;
+  text-transform: capitalize;
+}
+.divider h2 {
+  padding-bottom: 4px;
+}
+.divider .divider-wrapper {
+  padding: 40px 20px 40px 20px;
+  position: relative;
+  bottom: 40px;
+  transition: all 0.4s ease-in;
+}
+.divider .divider-wrapper:hover {
+  bottom: 60px;
+  cursor: pointer;
+}
+.divider .divider-one {
+  background: #f16f26;
+}
+.divider .divider-two {
+  background: #f16f26;
+}
+.divider .divider-three {
+  background: #f16f26;
+}
+
+
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand navbar-left" style="padding: 0px" href="#myPage"><img src="./logowhite.png" class="img-responsive" style="max-height: 50px; padding-left: 4px" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./team.html">TEAM</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
+        <li><a href="./partner.html">PARTNERS</a></li>
+        <li><a href="./support.html">SUPPORT US</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+      <div class="col-sm-1">
+      </div>
+    <div class="col-sm-10">
+      <h1 style="color: black">Why Support Us</h1>
+      <p>We are really passionate about our project and so we leave no stone unturned to make the best FSAE F1 Car but being a student formula racing team, we completely rely on industry support in the form of monetary or technical sponsorship. We believe in mutual benefits and thus we provide ample reasons for our sponsors to associate with us, primarily:-</p>
+    </div>
+    
+    <!--<div class="col-sm-1">
+      </div>-->
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row slideanim" id="brand">
+    <div class="col-sm-12">
+      <h2 style="color: #f16f26"><span class="glyphicon glyphicon-star"></span> Brand Development</h2>
+      <p>We believe that every product or service needs a platform to reach out to its customer and do something different to create a brand image. This is where we come into picture. Come get your brand logo on the fastest road machine and be Vodafone to our Mclaren racing or Petronas to our Mercedes-Benz racing.</p>
+    </div>
+  </div>
+  <div class="row slideanim" id="love">
+      <div class="col-sm-12">
+        <h2 style="color: #f16f26"><span class="glyphicon glyphicon-heart"></span> Love</h2>
+        <p>We believe that every product or service needs a platform to reach out to its customer and do something different to create a brand image. This is where we come into picture. Come get your brand logo on the fastest road machine and be Vodafone to our Mclaren racing or Petronas to our Mercedes-Benz racing.</p>
+      </div>
+    </div>
+    <div class="row slideanim" id="visibility">
+        <div class="col-sm-12">
+          <h2 style="color: #f16f26"><span class="glyphicon glyphicon-eye-open"></span> Visibility</h2>
+          <p>CRCE Formula Racing team and the car, and therefore our sponsors, are constantly promoted across Fr.CRCE’s campus and make regular appearances at national and international Formula SAE competitions. Formula Student competitions get participation from number of teams from around the globe.
+              We also have a vast reach to thousands of individuals via our active social media platforms. And we plan to use our reach solely to benefit our sponsors in any and every possible way.</p>
+        </div>
+      </div>
+      <div class="row slideanim" id="connectivity">
+          <div class="col-sm-12">
+            <h2 style="color: #f16f26"><span class="glyphicon glyphicon-signal"></span> Connectivity</h2>
+            <p>CRCE Formula Racing reaches out to all our students and alumni through regular newsletters that prominently feature our sponsors, and provides a channel for your business to be marketed to the immense Fr. CRCE alumni network. Your business will gain recruitment access to top engineering students at Fr. CRCE an institute with a long history of distinction and a reputation that speaks for itself.</p>
+          </div>
+        </div>
+        <div class="row slideanim" id="india">
+            <div class="col-sm-12">
+              <h2 style="color: #f16f26"><span class="glyphicon glyphicon-map-marker"></span> Support India's Future</h2>
+              <p>CRCE Formula Racing provides a platform for the students to have a unrivalled learning experience that integrates classroom knowledge with practicality. We at Team CFR are grooming the next set of budding engineers who could play a major role in revolutionizing the automobile future of India. You could probably be supporting the next Karl Benz & Henry Fords.</p>
+            </div>
+          </div>
+          <div class="row slideanim" id="seminar">
+              <div class="col-sm-12">
+                <h2 style="color: #f16f26"><span class="glyphicon glyphicon-user"></span> Seminars</h2>
+                <p>We can make arrangements to provide an option for our sponsors to meet and get in touch with the young minds in our college via seminars or workshops. These seminars or workshops can be planned keeping in mind the target audience of the sponsors.</p>
+              </div>
+            </div>
+</div>
+
+
+<div id="about" class="container-fluid">
+    <div class="row slideanim">
+      <div class="col-sm-12">
+        <h4>If you would like to discuss the details of the above and associate with us, our team would love to assist you.</h4>
+        <center>
+        <a href="./contact.html"><button class="btn btn-default btn-lg" style="background-color: #f16f26; color: #fff;"> Contact Us</button></a><br>
+        <input class="from-control" id="amount" name="amount" placeholder="Enter amount" type="number" required>
+        <a href="./payment.php"><button class="btn btn-default btn-lg" style="background-color: #f16f26; color: #fff;"> Donate Us</button></a>
+        </center>
+      </div>
+    </div>
+    <hr>
+    <div class="row slideanim">
+        <div class="col-sm-12">
+          <h4>For more details about the benefits of each sponsorship level:</h4>
+          <center>
+          <a href="#"><button class="btn btn-default btn-lg" style="background-color: #f16f26; color: #fff;"> Download Brochure</button></a>
+        </center>
+      </div>
+      </div>
+  </div>
+
+<!-- Container (Contact Section) -->
+<!-- <div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<hr><hr>
+<footer>
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-md-4 col-sm-4">
+                <p><br>Be a part of our family and help us reach our goals by
+                <a href="./support.html">Donating and Supporting us.</a><br>
+                Please Contact our team for Sponsorship Details or check out our <a href=""> Brochure</a>. <br>
+                If you wish to set up Seminars or Talks and wanna partner with us, please get in <a href="./contact.html">contact with us</a></p>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+           <center><img src="./logo.png" class="img-responsive" style="max-width: 250px" alt="logo">
+            <p style="margin-bottom: 5px; margin-top: 10px"> FR.CRCE Bandra</p>
+                <p style="margin-bottom: 5px;"> crceformularacing@gmail.com</p>
+                <a href="https://www.facebook.com/CRCEFormulaRacing/" class="fa fa-facebook fa-2x" style="color: #f16f26"></a>    &nbsp;&nbsp;
+                <a href="https://www.instagram.com/teamcfr/?hl=en" class="fa fa-instagram fa-2x" style="color: #f16f26"></a>
+              </center> 
+            </div>
+            
+            <div class="col-md-4 col-sm-4 newsletter">
+                <h3>Contact Us</h3>
+                <p><a href="./contact.html">"We are always Happy to help you help us out!"</a></p>
+                <h3>Support Us</h3>
+                <p><a href="/support.html">“There is no exercise better for the heart than reaching down and lifting people up.” </a></p>
+            </div>
+            
+        </div>
+    </div>
+</footer> 
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Team CFR sponsored by <a href="https://www.bankofbaroda.com/" title="Visit BOB">Bank of Baroda</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
